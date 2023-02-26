@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Square%20Peg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shantell%20Sans">
+</head>
+<body>
+    <header>
+        <div class="headertext">
+            <h1>Vivienne Bonnevier</h1>
+        </div>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a tabindex="1" href="home.html">Home and Bio</a></li>
+                <li><a tabindex="2" href="learned.html">Concepts of HTML Design</a></li>
+                <li><a tabindex="3" href="resume.html">Resume</a></li>
+                <li><a tabindex="4" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="formbox">
+            <!--Static HTML form-->
+            <form method="POST">
+                <input id="csrf_token" name="csrf_token" type="hidden" value="IjZmYjYyZDQyODcwNTA4NWJmYzM5MDU1ZDk5Yjg0MGYyMWI3YjI1MzQi.Y_s2Kw.4cAhMbJW2D7udjcjXF8tpSC1fNk">
+                <h2>Send A Message:</h2>
+                <fieldset id="namebox">
+                    <label for="name">Name:</label><br>
+                    <input id="name" maxlength="100" minlength="2" name="name" required="" tabindex="5" type="text" value=""><br>
+                </fieldset>
+                <fieldset id="emailbox">
+                    <label for="email">Email:</label><br>
+                    <input id="email" name="email" required="" tabindex="6" type="email" value=""><br>
+                </fieldset>
+                <fieldset id="messagebox">
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required="" rows="10" tabindex="7"></textarea><br>
+                </fieldset>
+                <input id="submitbutton" name="submit" tabindex="8" type="submit" value="Submit">
+                <input id="reset" type="reset" value="Reset Fields" tabindex="9">
+            </form>
+        </div>
+        <div id="mycontact">
+            <div id="myinfo">
+                <h2>Contact Info</h2>
+                <address>vivibonnevier@gmail.com</address>
+                <address id="phonenum"><a href="tel:570-592-1574">570-592-1574</a></address>
+                <address>5525 Bent Tree Drive<br>Shreveport, LA 71115</address>
+            </div>
+            <div id="mysocial">
+                <ul id="socials">
+                    <li><a tabindex="12" href="contact.html"><img class="icon" src="images/socmedicons/logof.png" alt="facebook link"></a></li>
+                    <li><a tabindex="13" href="contact.html"><img class="icon" src="images/socmedicons/logoig.png" alt="instagram link"></a></li>
+                    <li><a tabindex="14" href="contact.html"><img class="icon" src="images/socmedicons//logoin.png" alt="linked-in link"></a></li>
+                    <li><a tabindex="15" href="contact.html"><img class="icon" src="images/socmedicons/logop.png" alt="pinterest link"></a></li>
+                    <li><a tabindex="16" href="contact.html"><img class="icon" src="images/socmedicons/logot.png" alt="twitter link"></a></li>
+                    <li><a tabindex="17" href="contact.html"><img class="icon" src="images/socmedicons/logotw.png" alt="tumblr link"></a></li>
+                </ul>
+                <div id="socialstablet">
+                    <ul id="social1">
+                        <li><a tabindex="12" href="contact.html"><img class="icon" src="images/socmedicons/logof.png" alt="facebook link"></a></li>
+                        <li><a tabindex="13" href="contact.html"><img class="icon" src="images/socmedicons/logoig.png" alt="instagram link"></a></li>
+                        <li><a tabindex="14" href="contact.html"><img class="icon" src="images/socmedicons//logoin.png" alt="linked-in link"></a></li>
+                    </ul>
+                    <ul id="social2">
+                        <li><a tabindex="15" href="contact.html"><img class="icon" src="images/socmedicons/logop.png" alt="pinterest link"></a></li>
+                        <li><a tabindex="16" href="contact.html"><img class="icon" src="images/socmedicons/logot.png" alt="twitter link"></a></li>
+                        <li><a tabindex="17" href="contact.html"><img class="icon" src="images/socmedicons/logotw.png" alt="tumblr link"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

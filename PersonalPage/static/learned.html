@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Concepts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Square%20Peg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shantell%20Sans">
+</head>
+<body>
+    <header>
+        <div class="headertext">
+            <h1>Vivienne Bonnevier</h1>
+        </div>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a tabindex="1" href="home.html">Home and Bio</a></li>
+                <li><a tabindex="2" href="learned.html">Concepts of HTML Design</a></li>
+                <li><a tabindex="3" href="resume.html">Resume</a></li>
+                <li><a tabindex="4" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="learnedart">
+        <div class="learnedrow lpic">
+            <img class="learnimg" src="images/syntax.jpg" alt="Photo taken of a screen showing HTML syntax. Elements are colored and indented.">
+            <div>
+                <h2>Syntax</h2>
+                <p>An important part of proper HTML writing is proper syntax. While many browsers can sometimes compensate for errors in HTML, the best practice is to ensure that syntax is done correctly. It also assists with programs like screen readers and crawlers to have proper syntax. For example, knowing how to properly use html elements like headers, footers, articles, and lists can assist machines that don&apos;t rely on eyes like we do.</p>
+            </div>
+        </div>
+        <div class="learnedrow rpic">
+            <!--link to image source per CC BY SA: https://commons.wikimedia.org/wiki/File:CSS_grid_x_Flexbox_layout.png -->
+            <img class="learnimg" src="images/layout.png" alt="Two images, from left to right, a website layout in CSS Flexbox and the same layout in CSS Grid.">
+            <div>
+                <h2>Layouts</h2>
+                <p>While knowing HTML is important, it&apos;s also important to be able to apply proper CSS. CSS allows HTML to be more easily read in ways that make sense for human brains. It also allows displayed information to be more stylish and engaging for users. Useage of proper layout, like flexboxes, allows for information to be fit in interesting and engaging ways.</p>
+            </div>
+        </div>
+        <div class="learnedrow lpic">
+            <!--link to image source per CC BY SA: https://www.seobility.net/en/wiki/ALT_Attributes -->
+            <img class="learnimg" src="images/accesibility.png" alt="A visual aid showing a default image with alt-text. An arrow points to three different subsections from left to right: screen readers, search engines, and broken images.">
+            <div>
+                <h2>Accessibility</h2>
+                <p>Web-developers must also ensure that their pages are accessible to anyone. This means accomodating disabilities by making sure that their pages work well with screen readers (by use of proper syntax, alt-text on images, and good design practices). It is also good practice to accomodate motor disabilities as well (for example&colon; by incorporating tab navigation).</p>
+            </div>
+        </div>
+        <div class="learnedrow rpic">
+            <img class="learnimg" src="images/devices.png" alt="Four devices. To the very left is a samsung smart phone. At the top, another smart-device. Below is a samsung tablet. To the right there is an ASUS laptop.">
+            <div>    
+                <h2>Responsiveness</h2>
+                <p>Since there are a wide variety of devices used by consumers, webpages should try to be useable on as many as these as possible. This means changing page layouts for different screen sizes. Sometimes it may mean accomodating different types of browsers or offering compatibility with older devices as well.</p>
+            </div>
+        </div>
+        <div class="learnedrow lpic">
+            <!--link to image source per CC BY NC: https://www.flickr.com/photos/caseorganic/8665819411 -->
+            <img class="learnimg" src="images/fonts.jpg" alt="The text &quot;Grumpy wizards make toxic brew for the evil Queen.&quot; is repeatedly displayed in different fonts.">
+            <div>
+                <h2>Style</h2>
+                <p>No matter if a page is commercial or for a non-profit, in our world it is important to stand out and make a good impression on consumers. By using good style practices including appealing colors designs, fonts, and more, webpages can stand out and serve to be pleasant experiences. For example&colon; using interesting fonts from the google api can help certain text be more visually appealing!</p>
+            </div>
+        </div>
+        <div class="learnedrow rpic">
+            <img id="hoveroverme" class="learnimg" src="images/hoverover.png" alt="Text over a washed-out space background. The text says &quot;HOVER-OVER ME&quot;. When hovered over, the image spins.">
+            <div>
+                <h2>Animations</h2>
+                <p>Human eyes are drawn to movement, and as such making use of animations and transition effects can help to liven up a web page and draw attention to important details. By making use of mouse hovers, web-develoeprs can also use animation and transitions to fit more content on a page by having that information shrink when not hovered over and expand when it is.</p>
+            </div>
+        </div>
+    </article>
+</body>

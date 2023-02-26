@@ -1,0 +1,40 @@
+{% extends "template.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<article id="homeart">
+    <div id="tophomerow">
+        <div id="aboutme">
+            <h2>About Me:</h2>
+            <ul>
+                <li>Name: Vivienne Nova Bonnevier</li>
+                <li>Pronouns: She/Her</li>
+                <li>Age: 26 years old</li>
+                <li>Programmer, Artist, & Problem Solver</li>
+            </ul>
+        </div>
+        <div id="picturesrow">
+            <div class="homeimgcontainer"><img class="homeimg" src="/static/images/selfie.png" alt="I am standing in a room. My hair is dark brown and chin-length and I am smiling at the camera."></div>
+            <div class="homeimgcontainer"><img class="homeimg" src="/static/images/myart.png" alt="My own art. I have painted my interpretation of a scene from Final Fantasy XIV in which the gigantic dragon Bahamut breaks out of his moon-sized prison. It is extremely nerdy."></div>
+            <div class="homeimgcontainer"><img class="homeimg" src="/static/images/bpcc.png" alt="The logo for Bossier Parish Community College, or BPCC"></div>
+        </div>
+    </div>
+    <div id="bottomhomerow">
+        <div class="homeinfo">
+            <h2>Biography:</h2>
+            <p>I was born in Pennsylvania, moved to Louisiana and lived here for 7 years, then moved back to Pennsylvania for 10 more years, then moved back here at the age of 18.</p>
+            <p>Since moving back to Shreveport, I&apos;ve worked for companies such as Bricks 4 Kidz, GameStop, and The Shreveport Aquarium.</p>
+        </div>
+        <div class="homeinfo">
+            <h2>Education:</h2>
+            <p>I previously went to Bossier Parish Community College &lpar;BPCC&rpar; to obtain an associates degree in Engineering.</p>
+            <p>Currently, I am obtaining an associates in Software Development at BPCC while also caring for my 10 year old nephew and 9 year old niece.</p>
+            <p>While working on this degree, I've learned to design websites with HTML, CSS, and JavaScript and to program with languages like C#, Java, and Python.</p>
+        </div>
+        <div class="homeinfo">
+            <h2>Awards:</h2>
+            <p>For my grades in school, I was on the BPCC Chancellor&apos;s list for my Engineering degree in 2015-2017, and in 2022 for my Software Development degree.</p>
+            <p>In December 2022, I received BPCC&apos;s Terry O&apos;Banion Technology Award. The award honors two deserving students who demonstrate special talent in technology, passion about moving toward a career in technology, and academic excellence.</p>
+        </div>
+    </div>
+</article>
+{% endblock %}

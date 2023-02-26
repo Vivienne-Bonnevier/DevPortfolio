@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+{% block title %}Contact Info{% endblock %}
+{% block body %}
+<main>
+    <div id="formbox">
+        {% include "form.html" %}
+    </div>
+    <div id="mycontact">
+        <div id="myinfo">
+            <h2>Contact Info</h2>
+            <address>vivibonnevier@gmail.com</address>
+            <address id="phonenum"><a href="tel:570-592-1574">570-592-1574</a></address>
+            <address>5525 Bent Tree Drive<br>Shreveport, LA 71115</address>
+        </div>
+        {% include "socmed.html" %}
+    </div>
+</main>
+{% endblock %}

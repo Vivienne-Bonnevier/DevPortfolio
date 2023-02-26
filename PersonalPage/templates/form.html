@@ -1,0 +1,19 @@
+<!--Demonstration of HTML form entry using Flask and WTForms-->
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <h2>Send A Message:</h2>
+    <fieldset id="namebox">
+        {{ form.name.label }}<br>
+        {{ form.name(id="name", tabindex="5") }}<br>
+    </fieldset>
+    <fieldset id=emailbox>
+        {{ form.email.label }}<br>
+        {{ form.email(id="email", tabindex="6") }}<br>
+    </fieldset>
+    <fieldset id="messagebox">
+        {{ form.message.label }}<br>
+        {{ form.message(id="message", rows="10", tabindex="7") }}<br>
+    </fieldset>
+    {{form.submit(id="submitbutton", tabindex="8") }}
+    <input id="reset" type="reset" value="Reset Fields" tabindex="9">
+</form>

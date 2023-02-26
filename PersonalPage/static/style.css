@@ -1,0 +1,630 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*Applies to body of all pages*/
+body{
+    /*This image from https://opengameart.org/content/seamless-space-backgrounds */
+    background-image: url(images/spacebg.png);
+    background-attachment: fixed;
+}
+
+/*Navigation bar settings*/
+header {
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    /*This image from https://pixabay.com/illustrations/space-abstract-background-gradient-5629007/ */
+    background-image: url(images/space.webp);
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    margin:auto;
+    font-size: 300%;
+    text-align: center;
+    font-family: 'Square Peg';
+    color: rgb(247, 255, 103);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    background-image: radial-gradient(circle,rgba(0,0,0,.4),rgba(0,0,0,.1));
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle,rgba(0,0,0,.1),rgba(0,0,0,.4));
+}
+nav h2{
+    text-align: center;
+    margin: auto;
+    font-family: 'Bebas Neue';
+    margin-top: 10px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+nav li{
+    text-align: center;
+    list-style:none;
+    display: flex;
+}
+nav li a{
+    color:rgb(247, 255, 103);
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Bebas Neue';
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: inset 0 0 100px 5px rgba(0, 0, 0,.4);
+}
+nav li:hover{
+    box-shadow: inset 0 0 100px 5px rgba(0, 0, 0,.8);
+}
+/*Article structure for home page and what I learned*/
+article{
+    color:whitesmoke;
+    width: 1000px;
+    margin: auto;
+    padding-top: 160px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*============================== DESKTOP SETTINGS ==============================*/
+
+
+/*========== HOMEPAGE SETTINGS D ==========*/
+#tophomerow{
+    width:100%;
+    height:600px;
+    background-image: linear-gradient(to bottom,rgba(187, 0, 255, 0.604),rgba(0,0,0,0));
+}
+#aboutme{
+    float:left;
+    margin: 15px;
+}
+#aboutme h2{
+    font-family: 'Square Peg';
+    color:rgb(247, 255, 103);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    font-size: 210%;
+}
+#aboutme ul{
+    list-style: none;
+    font-family: 'Bebas Neue';
+    font-size:140%;
+    text-shadow: 0 0 10px black;
+}
+#picturesrow{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.homeimg{
+    width:200px;
+    height:auto;
+    margin:5px;
+    padding:auto;
+    box-shadow: 0,0,50px,black;
+    border: solid white 2px;
+    border-radius: 10px;
+}
+#bottomhomerow{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    margin: auto;
+    padding: auto;
+    margin-top:-300px;
+    align-items: center;
+    justify-content: center;
+}
+.homeinfo{
+    width:300px;
+    height:300px;
+    border-radius: 15px;
+    border: solid white 2px;
+    background-color:rgba(31, 31, 31, .8);
+    margin:15px;
+    padding:10px;
+}
+.homeinfo h2{
+    font-family: 'Square Peg';
+    color:rgb(247, 255, 103);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    border-bottom: dashed white 2px;
+}
+.homeinfo p{
+    text-indent: 15px;
+    margin:5px;
+    font-size: 16px;
+}
+
+/*========== LEARNED SETTINGS D ==========*/
+
+.learnedrow{
+    display:flex;
+    background-color:rgba(187, 0, 255, 0.604);
+    border-style: solid;
+    margin-bottom: 20px;
+}
+.learnedrow h2{
+    font-family: 'Square Peg';
+    color:rgb(247, 255, 103);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    font-size: 210%;
+}
+.learnedrow p{
+    font-size: 110%;
+    margin-top: 10px;
+}
+/*This applies to the rows with images on the left and a rounded edge to the right*/
+.lpic{
+    flex-direction: row;
+    border-top-right-radius: 100px 50%;
+    border-bottom-right-radius: 100px 50%;
+}
+.lpic .learnimg{
+    border-right: solid;
+}
+.lpic div{
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:80px;
+}
+/*This applies to the rows with images on the right and a rounded edge to the left*/
+.rpic{
+    flex-direction: row-reverse;
+    border-top-left-radius: 100px 50%;
+    border-bottom-left-radius: 100px 50%;
+}
+.rpic .learnimg{
+    border-left: solid;
+}
+.rpic div{
+    margin-top:20px;
+    margin-left:80px;
+    margin-right:20px;
+}
+/*Set the size of the images in the rows*/
+.learnimg{
+    height: 200px;
+    width: 200px;
+}
+/*Animate the hover image*/
+@keyframes hoverspin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+#hoveroverme:hover{
+    animation-name: hoverspin ;
+    animation-duration: 3s;
+}
+
+/*========== CONTACT SETTINGS D ==========*/
+
+main{
+    color:whitesmoke;
+    width: 1000px;
+    margin: auto;
+    padding-top: 160px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*The form on the left*/
+#formbox{
+    width: 50%;
+    background-color: rgba(187, 0, 255, 0.604);
+    border: solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+#formbox h2{
+    font-family: 'Square Peg';
+    color:rgb(247, 255, 103);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    font-size: 210%;
+    margin: 5px;
+    margin-left: 10px;
+}
+#formbox label, #formbox span{
+    font-family: 'Bebas Neue'
+}
+#namebox, #emailbox, #messagebox, #whoisbox{
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-right:10px;
+}
+#name, #email, #message{
+    width:100%;
+    resize:none;
+}
+#whoisbox label{
+    margin-right: 20px;
+}
+#whoisboxtablet{
+    display:none;
+}
+#submitbutton, #reset{
+    background-color:rgba(31, 31, 31, 1);
+    color:white;
+    padding:2px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*contact info on the right*/
+#mycontact{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+#mycontact h2{
+    font-family: 'Square Peg';
+    color:rgb(247, 255, 103);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    font-size: 210%;
+    margin: 5px;
+    margin-left: 10px;
+}
+#myinfo{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    background-color: rgba(187, 0, 255, 0.604);
+    border: solid white;
+    border-radius:10px;
+    padding: 10px;
+    text-shadow: 0 0 10px black;
+}
+#myinfo address{
+    margin:10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-style: normal;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+#phonenum a{
+    color:inherit;
+}
+#phonenum a:hover{
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:10px;
+    padding: 10px;
+    background-color: rgba(187, 0, 255, 0.604);
+    list-style: none;
+    border: solid white;
+    border-radius:10px;
+}
+#socialstablet{
+    display:none;
+}
+.icon{
+    width:50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    border: solid white;
+    box-shadow: 0 0 5px black;
+}
+.icon:hover{
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/*============================== TABLET SETTINGS ==============================*/
+
+@media only screen and (min-width: 426px) and (max-width: 1024px){
+
+    /*========== HOME SETTINGS T ==========*/
+    #homeart{
+        width:90%;
+        display:flex;
+        flex-direction:column;
+    }
+    .homeimg{
+        width:100%;
+        max-width: 200px;
+    }
+    #tophomerow{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
+    #aboutme{
+        width:50%;
+        float:left;
+        margin-top:10px;
+    }
+    #picturesrow{
+        width:90%;
+        margin:auto;
+        margin-top:20px;
+        display:flex;
+        flex-direction:row;
+        float:right;
+    }
+    #aboutme ul{
+        list-style: none;
+        font-family: 'Bebas Neue';
+        font-size:100%;
+        text-shadow: 0 0 10px black;
+    }
+    #bottomhomerow{
+        display:flex;
+        flex-direction:column;
+        margin-top:-180px;
+    }
+
+
+    /*========== LEARNED SETTINGS T ==========*/
+
+    #learnedart{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .learnedrow{
+        width:90%;
+        display:flex;
+        flex-direction:column-reverse;
+        border-radius:0;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .learnimg{
+        margin:auto;
+        margin-bottom:20px;
+        box-shadow: 0 0 20px black;
+    }
+    .lpic .learnimg{
+        border-right: hidden;
+    }
+    .rpic .learnimg{
+        border-left: hidden;
+    }
+    .learnedrow div{
+        margin:20px;
+    }
+    .learnedrow p{
+        text-indent: 15px;
+    }
+
+    /*========== CONTACT SETTINGS T ==========*/
+
+    main{
+        color:whitesmoke;
+        width: 80%;
+        margin: auto;
+        padding-top: 160px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #formbox{
+        width:100%;
+    }
+    #mycontact{
+        display:flex;
+        flex-direction: row;
+        width:100%;
+    }
+    #myinfo{
+        margin-left: 0;
+        width:50%
+    }
+    #mysocial{
+        width: 50%;
+        height:100%;
+    }
+    #socials{
+        display:none;
+    }
+    #socialstablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:10px;
+        margin-right: 0;
+        padding: 10px;
+        background-color: rgba(187, 0, 255, 0.604);
+        border: solid white;
+        border-radius:10px;
+    }
+    #social1, #social2{
+        list-style: none;
+    }
+    #whoisbox label{
+        margin-right: 0;
+    }
+    #whoisbox{
+        display:none;
+    }
+    #whoisboxtablet{
+        display:flex;
+        flex-direction:column;
+        padding-left: 10px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        padding-right:10px;
+    }
+    #whoisboxtablet span{
+        margin-bottom: -15px;
+    }
+
+    /*========== RESUME SETTINGS T ==========*/
+    #resumebox{
+        width:100%;
+    }
+    #resume{
+        width:100%;
+    }
+}
+
+/*============================== MOBILE SETTINGS ==============================*/
+
+@media only screen and (max-width: 425px){
+
+    /*========== HOME SETTINGS M ==========*/
+    #homeart{
+        width:90%;
+        display:flex;
+        flex-direction:column;
+    }
+    .homeimg{
+        width:100%;
+        max-width: 200px;
+    }
+    #tophomerow{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
+    #aboutme{
+        width:50%;
+        float:left;
+        margin-top:10px;
+    }
+    #picturesrow{
+        width:90%;
+        margin:auto;
+        margin-top:20px;
+        display:flex;
+        flex-direction:column;
+        float:right;
+    }
+    .homeimgcontainer{
+        margin:auto;
+    }
+    #aboutme h2{
+        font-size:160%;
+    }
+    #aboutme ul{
+        list-style: none;
+        font-family: 'Bebas Neue';
+        font-size:80%;
+        text-shadow: 0 0 10px black;
+    }
+    #bottomhomerow{
+        display:flex;
+        flex-direction:column;
+        margin-top:240px;
+    }
+    .homeinfo{
+        width:auto;
+        height:auto;
+    }
+    /*========== LEARNED SETTINGS M ==========*/
+
+    #learnedart{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .learnedrow{
+        width:90%;
+        display:flex;
+        flex-direction:column-reverse;
+        border-radius:0;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .learnimg{
+        display:none;
+    }
+    .learnedrow div{
+        margin:20px;
+    }
+    .learnedrow p{
+        text-indent: 15px;
+    }
+
+    /*========== CONTACT SETTINGS M ==========*/
+
+    main{
+        color:whitesmoke;
+        width: 100%;
+        padding-top: 160px;
+        display:flex;
+        flex-direction: column;
+    }
+    #formbox{
+        width:90%;
+    }
+    #mycontact{
+        width:90%;
+    }
+    #myinfo{
+        margin-left:0;
+        margin-right:0;
+    }
+    #mysocial{
+        margin-left:0;
+        margin-right:0;
+    }
+    #socials{
+        display:none;
+    }
+    #socialstablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:10px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        background-color: rgba(187, 0, 255, 0.604);
+        border: solid white;
+        border-radius:10px;
+    }
+    #social1, #social2{
+        list-style: none;
+    }
+    #whoisbox label{
+        margin-right: 0;
+    }
+    #whoisbox{
+        display:none;
+    }
+    #whoisboxtablet{
+        display:flex;
+        flex-direction:column;
+        padding-left: 10px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        padding-right:10px;
+    }
+    #whoisboxtablet span{
+        margin-bottom: -15px;
+    }
+
+    /*========== RESUME SETTINGS M ==========*/
+    #resumebox{
+        width:100%;
+    }
+    #resume{
+        width:100%;
+    }
+
+}
